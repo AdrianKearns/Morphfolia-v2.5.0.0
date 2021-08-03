@@ -1,0 +1,266 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+
+<!-- Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details.  -->
+
+
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD4D78F-304B-49B4-B91B-EF3C3692BC8F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Morphfolia.SQLDataProvider</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Morphfolia.SQLDataProvider</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Morphfolia.Common\Morphfolia.Common.csproj">
+      <Project>{6602B70C-C556-4F1D-AB96-E2053F7DBA38}</Project>
+      <Name>Morphfolia.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morphfolia.ISQLDataProvder\Morphfolia.IDataProvider.csproj">
+      <Project>{0902A494-10E8-443A-A450-156B50A9B6A2}</Project>
+      <Name>Morphfolia.IDataProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuditorDataProvider.cs" />
+    <Compile Include="ContentDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomPropertiesDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentIndexerDataProvider.cs" />
+    <Compile Include="DataProviderInformation.cs" />
+    <Compile Include="Exceptions\SQLDataProviderException.cs" />
+    <Compile Include="Exceptions\ConnectionHelperException.cs" />
+    <Compile Include="Utilities\BoolIntConverter.cs" />
+    <Compile Include="Utilities\Like.cs" />
+    <Compile Include="Utilities\SqlDatabaseHelper.cs" />
+    <Compile Include="HttpLoggerDataProvider.cs" />
+    <Compile Include="ImageDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logging\EventIds.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="LogViewerDataProvider.cs" />
+    <Compile Include="PageDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchEngineDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\DateTimeHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_DELETE_UnwantedWords.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_INSERT_Word.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_SELECT_WordIndexList.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_SELECT_WordsForTagCloud.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentMarshal_DELETE_ContentForPage.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentMarshal_INSERT_ContentItemForPage.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_DELETE_ByContentID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SEARCH.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ActiveContentForIndexing.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ByContentID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_List.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_List_Search.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_PageByID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_PageByID_ForLivePublishing.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_UPDATE.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYInstanceID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYInstanceIDPropertyKey.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYInstanceID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYInstanceIDPropertyKey.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYPropertyKey.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_ContentItemIdsBYInstanceID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_DestinationUrlsFromVisitedUrl.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_ReferreringUrlsForVisitedUrl.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_TopTenUrls.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UniqueSessions.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UrlHistoryForSession.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Image_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Image_SELECT_ByImageName.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_DELETE_ByPageID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_ByChildContentItem.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_ByURL.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_ByURLForLivePublishing.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_List.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_ListSearch.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_PageByID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_UrlSegmentSearch.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_UPDATE.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\PURGE_AllSearchIndexTables.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\PURGE_ContentIndexDataForContentInstance.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\SearchIndex_INSERT_Word.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_SELECT_All.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_SELECT_ByEmailAddress.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_SELECT_ByID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_SELECT_ByLogin.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\User_UPDATE.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\WordIndex_SEARCH.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQL\2.4.1.0\Manage Logs.sql" />
+    <None Include="SQL\2.4.1.0\Morphfolia 2.4.1.0 - CREATE New Instance.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\AspnetUsers_SELECT_ByUsername.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\AuditLog_INSERT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\AuditLog_SELECT_ByIdAndType.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\AuditLog_SELECT_Search.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_DELETE_OrphanRecords.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ContentIndex_SELECT_Overview.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ByContentNote.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ByDateLastModified.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ForBlogRSS.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_LatestLiveByPageId.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ListAllOrphans.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ListByDateLastModified.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_ListLatestLiveByPageId.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_List_ById.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Content_SELECT_SearchLiveOnly.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYInstanceIDPropertyType.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYPropertyKeyAndPropertyValue.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_DELETE_BYPropertyTypeAndPropertyValue.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BlogPostsByCTag.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYInstanceIDPropertyType.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYInstanceIDPropertyValueAndKey.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_BYPropertyType.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_CTagsForLiveBlog.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\ControlProperties_SELECT_CTagsForLiveBlogs.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\GetTotalSize.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_ActiveSessionsByDateRange.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_ActiveSessionsByHours.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_DestinationUrlsFromVisitedUrlByDateRange.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_DestinationUrlsFromVisitedUrlByHours.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_HistoryByDateRange.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_ReferreringUrlsForVisitedUrlByDateRange.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_ReferreringUrlsForVisitedUrlByHours.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UniqueSessionsByDateRange.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UrlHistory.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UrlHistory4WeekReport.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\HttpLog_SELECT_UrlHistory7DayReport.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_FullReportByPageID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\Page_SELECT_PagesByID.sql" />
+    <None Include="SQL\2.4.1.0\Stored Procedures\spGrantExectoAllStoredProcs.sql" />
+    <None Include="SQL\Upgrade 2.3.0.0 to 2.4.0.0\Upgrade A - Auditing table and SPs.sql" />
+    <None Include="SQL\Upgrade 2.3.0.0 to 2.4.0.0\Upgrade B - ContentType table and SPs.sql" />
+    <None Include="SQL\Upgrade 2.3.0.0 to 2.4.0.0\Upgrade C - New and Modified SPs.sql" />
+    <None Include="SQL\Upgrade 2.3.0.0 to 2.4.0.0\Upgrade D - New and Modified SPs.sql" />
+    <None Include="SQL\Upgrade 2.4.0.0 to 2.4.1.0\ControlProperties_DELETE_BYPropertyKeyAndPropertyValue.sql" />
+    <None Include="SQL\Upgrade 2.4.0.0 to 2.4.1.0\ControlProperties_DELETE_BYPropertyTypeAndPropertyValue.sql" />
+    <None Include="SQL\Upgrade 2.4.0.0 to 2.4.1.0\Upgrade 2.4.1 A.sql" />
+    <None Include="SQL\Upgrade 2.4.1.1 to 2.5.0.0\HttpLog_SELECT_UrlHistory.sql" />
+    <None Include="SQL\Upgrade 2.4.1.1 to 2.5.0.0\HttpLog_SELECT_UrlHistory4WeekReport.sql" />
+    <None Include="SQL\Upgrade 2.4.1.1 to 2.5.0.0\HttpLog_SELECT_UrlHistory7DayReport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+    <Content Include="SQL\Upgrade 2.4.1.0 to 2.4.1.1\No Database Changes Required.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\DevData\Morphfolia\Source Code\Current Build"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<FormTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>User Story</Name>
+  <Fields>
+    <FormTemplateField>
+      <Name>Story Name</Name>
+      <Text></Text>
+      <Type>Medium</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Priority</Name>
+      <Text></Text>
+      <Type>Small</Type>
+      <Description>H M L C (High, Medium, Low, Complete)</Description>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Story Points</Name>
+      <Text></Text>
+      <Type>Small</Type>
+      <Description>[easier] 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 [harder]</Description>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Story Detail</Name>
+      <Text></Text>
+      <Type>Large</Type>
+    </FormTemplateField>
+  </Fields>
+</FormTemplate>

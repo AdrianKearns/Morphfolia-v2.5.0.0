@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FormTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Recipe</Name>
+  <Fields>
+    <FormTemplateField>
+      <Name>Name</Name>
+      <Text></Text>
+      <Type>Medium</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Ingredients</Name>
+      <Text></Text>
+      <Type>Large</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Method</Name>
+      <Text></Text>
+      <Type>Large</Type>
+    </FormTemplateField>
+  </Fields>
+</FormTemplate>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<FormTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Test FormTemplate</Name>
+  <Fields>
+    <FormTemplateField>
+      <Name>Small (text)</Name>
+      <Text></Text>
+      <Type>Small</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Medium (text)</Name>
+      <Text></Text>
+      <Type>Medium</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Large (text)</Name>
+      <Text></Text>
+      <Type>Large</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>InLineImage</Name>
+      <Text></Text>
+      <Type>InLineImage</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>InLineVideo</Name>
+      <Text></Text>
+      <Type>InLineVideo</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>LinkToFile</Name>
+      <Text></Text>
+      <Type>LinkToFile</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>LinkToUrl</Name>
+      <Text></Text>
+      <Type>LinkToUrl</Type>
+    </FormTemplateField>
+  </Fields>
+</FormTemplate>

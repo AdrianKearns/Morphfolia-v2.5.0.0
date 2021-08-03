@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Morphfolia.Business.Blogging.Blog">
+    <Position X="1.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgCAAAIRAAgAEAAgAAABAAIAgCAAACAEAAAUAAAAAA=</HashCode>
+      <FileName>Blogging\Blog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Morphfolia.Business.Blogging.BloggingUtilities">
+    <Position X="4.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Blogging\BloggingUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Morphfolia.Business.Blogging.BlogFactory">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAMAQAAAAAAAAAAAAAMAgAgQAEAAAAAAAAAAAg=</HashCode>
+      <FileName>Blogging\BlogFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,126 @@
+/* Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details.   */
+
+body { margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; } 
+form { margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; }
+
+body,p,td,pre,ul,ol,i,dl,dt,dd,input,select,textarea,button { font-family: verdana,helvetica,arial,sans-serif; }
+body,p,td,pre,ul,ol,i,dl,dt,dd,input,select,textarea,button { font-size: 11px; }
+
+
+.pnlUploadStatus_hidden		{ display:none; border: 1px solid #000000; background-color: #bbeeff; width: 75%; left: 30px; top: 45px; padding: 1em; }
+.pnlUploadStatus			{ display:inline; border: 1px solid #000000; background-color: #bbeeff; width: 75%; left: 30px; top: 45px; padding: 1em; z-index: 1000; }
+
+.simpleMouseOverState { background-color: #eeffcc; }
+.SessionFlowHistory_Url { padding-left: 1.5em; }
+
+.bordvis		    { border: 1px solid #000000; }
+table.bordvis		{ border-left: 1px solid #000000; border-top: 1px solid #000000; }
+table.bordvis td	{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; }
+
+.line		{ background-color: #ddeeff; font-size: 1px; }
+img.line	{ background-color: #ddeeff; }
+
+
+.PageTitle	{ font-size: 16px; color: #333333; font-weight: 700; }
+.FunctionalArea			{ border: 1px solid #99cccc; margin: 1px; }
+.DefaultFormTemplatePresenterProviderItem { border: 1px solid #99cccc; margin: 1px; }
+
+tr.ListHeader		{ font-weight: 700; background-color: #eeeeee; }
+tr.ListHeader td	{ font-weight: 700; background-color: #eeeeee; }
+tr.activeSearchPreview td { background-color: #ddeeff; cursor: hand; }
+
+.searchResults_ResultsHeading { font-size: 12px; font-weight: 700; }
+.searchResults_MainLink { font-size: 12px; font-weight: 700; }
+.searchResults_FullUrlLink {  }
+.searchResults_description { font-size: 9px; }
+.searchResults_lastUpdated { font-size: 9px; }
+
+td.footerText { background-color: #eeeeee; }
+th { text-align: left; }
+
+.MajorLink { font-size: 13px; }
+.fakeLink { color: #3366dd; } 
+:link { color: #3366dd; text-decoration: underline; }
+v:link { color: #3366dd; text-decoration: underline; }
+a:link { color: #3366dd; text-decoration: underline; }
+a:visited { color: #3366dd; text-decoration: underline; }
+a:active { color: red; text-decoration: underline; }
+a:hover { color: red; text-decoration: underline; }
+
+.btn { background-color: #cccccc; border: 1px solid #000000; padding: 3px; cursor: hand; }
+
+/* _publishing style */
+.Popup	{ background-color: #ddeeff; border: 1px solid #000000; }
+
+table.xxx		{ border-left: 1px solid #000000; border-top: 1px solid #000000; background-color: #ddeeff; }
+table.xxx td	{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; background-color: #ddeeff; }
+
+.ImageManager { border: 1px solid #000000; background-color: #f3f9ff; padding: 3px; }
+.FileManager { border: 1px solid #000000; background-color: #f3f9ff; padding: 3px; }
+
+
+.ABKEditorButton	{ background-color: #fcfcfc; border: 1px solid #fcfcfc; margin: 1px; cursor: hand; }
+.ABKEditorButton_mo	{ background-color: #f6f6f6; border: 1px solid #999999; margin: 1px; cursor: hand; }
+.ABKEditor			{ background-color: #fcfcfc; border: 1px solid #000000; }
+
+.WordIndexListLetterStyle { font-size: 16px; font-weight: 700; border-bottom: 1px solid #cccccc; }
+.WordIndexListWordStyle { font-weight: 700; }
+.WordIndexListWordLinkStyle { margin-left: 30px; margin-bottom: 4px; }
+.WordIndexListWordLinkGroupStyle { margin-bottom: 15px; margin-top: 4px; }
+
+.DefaultFormTemplatePresenterProviderItem {
+    border: dashed 1px #ccccdd; 
+    margin-bottom: 4px;
+     }
+          
+.DefaultFormTemplatePresenterProviderHeading { font-weight: 700; background-color: #eeeeff; }
+
+.AuditLogBox { border: solid 1px #ccccdd; }
+.AuditLogBox * { color: #aa99aa; }
+
+.myStyle { color: #ffffff; background-position: center center; height: 150px; vertical-align: bottom; }
+
+
+.BlogPageLayoutPostTable {  }
+.BlogPageLayoutPostTitle { border-bottom: dotted 1px #99cccc; color: #333333; font-size: large; } /* border-top : solid 1px #6666cc; */
+.BlogPageLayoutPostWhoAndWhen { font-size: x-small; color: #999999; }
+.BlogPageLayoutPostContent { padding-bottom: 2em; }
+
+
+.ScrumSprintPlanner_table { margin: 10px; }
+.ScrumSprintPlanner_ProductBacklog { border-right: dashed 2px #666666; }
+.ScrumSprintPlanner_CurrentSprintBacklog { border-right: dashed 1px #666666; }
+.ScrumSprintPlanner_NextSprintBacklog {  }
+
+.ScrumSprintPlanner_UserStory_HighPriority { border: solid 2px #EF0000; background-color: #ffffff; }
+.ScrumSprintPlanner_UserStory_HighPriority td { background-color: #FFBBBB; }
+
+.ScrumSprintPlanner_UserStory_MediumPriority { border: solid 2px #FF9C00; background-color: #ffffff; }
+.ScrumSprintPlanner_UserStory_MediumPriority td { background-color: #FFD48F; }
+
+.ScrumSprintPlanner_UserStory_LowPriority { border: solid 2px #FFE400; background-color: #ffffff; }
+.ScrumSprintPlanner_UserStory_LowPriority td { background-color: #FFFAA1; }
+
+.ScrumSprintPlanner_UserStory_NoPriority { border: solid 2px #cccccc; background-color: #ffffff; }
+.ScrumSprintPlanner_UserStory_NoPriority td { background-color: #eeeeee; }
+
+.ScrumSprintPlanner_UserStory_Complete { border: solid 2px #4CD914; background-color: #ffffff; }
+.ScrumSprintPlanner_UserStory_Complete td { background-color: #D4FFC2; }
+
+
+    .KeyWordBlue { color: Blue; }
+    .Comment { color: #ffcc00; }
+    .String { color: #A31515; }
+    .TypeText { color: #2B91AF; }
+    
+    .inLineCode { font-weight: 300; font-family: Courier New; background-color: #ffffdd; }
+    
+      .code { font-family: Courier New; 
+        padding: 5px 5px 5px 5px; 
+        margin: 5px 3px 5px 3px; 
+        border: dashed 1px #cccccc; }

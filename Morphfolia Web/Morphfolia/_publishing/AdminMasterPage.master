@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="_publishing_AdminMasterPage" %>
+
+<!-- Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details.  -->
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    
+    <LINK href='adminStyle.css' rel='stylesheet' type='text/css'>
+
+
+        <asp:contentplaceholder id="PageHeadPlaceholder" runat="server"></asp:contentplaceholder>    
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <table border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td class='adminMenu' valign="top" width='250'>                
+                
+                <div align=center>
+                <a href="http://www.morphological.geek.nz" target="_blank" title="This is Morphfolia, for more info click here to go to www.morphological.geek.nz"><asp:Image ID="imgLogo" runat="server" BorderColor=White BorderStyle=None BorderWidth=0px /></a>
+                </div>
+                
+                <p>Welcome, <asp:LoginName ID="LoginName1" runat="server" /> | 
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" /></p>
+                    
+        <asp:Table ID="tblAdminMenu" runat="server" CellPadding="5" CellSpacing="0" Width="230px">
+        </asp:Table>
+        
+                </td>
+                <td class='adminDivider'><img height='150' src='../g/spacer.gif' width='1' /></td>
+                <td class='adminWorkArea' valign="top" width='100%'>    
+    
+        <asp:contentplaceholder id="MainContentPlaceholder" runat="server"></asp:contentplaceholder>    
+    
+                </td>
+            </tr>
+        </table>           
+    </form>
+</body>
+</html>

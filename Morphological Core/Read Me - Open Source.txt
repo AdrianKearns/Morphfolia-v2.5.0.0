@@ -1,0 +1,35 @@
+Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details. 
+
+----------------------------------------------
+Read Me - Open Source
+----------------------------------------------
+
+This document outlines how to get the open source version of 
+Morphfolia set-up properly on your machine, so that it will 
+compile successfully.
+
+Applies to version 2.4.1.0
+
+
+----------------------------------------------
+Steps:
+----------------------------------------------
+
+1 - Remove or alter the post build event.
+
+The current post build events copy the resulting dll's to a build 
+folder from where you can referencing them in other projects.
+
+The post build event provided with the source code is: 
+
+copy "$(TargetPath)" "C:\DevData\Morphfolia\Source Code\Current Build"
+
+
+----------------------------------------------
+End
+----------------------------------------------

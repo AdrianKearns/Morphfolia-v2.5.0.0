@@ -1,0 +1,119 @@
+/* Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details.   */
+
+          
+body { margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; } 
+form { margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; }
+
+body,p,td,pre,ul,ol,i,dl,dt,dd,input,select,textarea,button { font-family: verdana,helvetica,arial,sans-serif; }
+body,p,td,pre,ul,ol,i,dl,dt,dd,input,select,textarea,button { font-size: 11px; }
+
+
+.adminMenu { background-color: #f9fbfd; }
+.adminDivider { background-color: #e9ebed; }
+.adminWorkArea { padding: 20px; }
+.CustomPublishingProperty { border-top: 1px dashed #cccccc; }
+
+.VerticalDividerTop { border-top: 1px dashed #666666; }
+.VerticalDividerBottom { border-bottom: 1px dashed #666666; }
+
+.zebra td { background-color: #f6faff; }
+
+.iconMainNode   { border: 1px solid #999999; background-color: #dddddd; }
+.iconSubNode   { border: 1px solid #bbbbbb; background-color: #f3f3f3; }
+
+.DefaultFormTemplatePresenterProviderItem { border: 1px solid #000000; }
+.FunctionalArea			{ border: 1px solid #000000; }
+.FunctionalArea_Light	{ border: 1px solid #dddddd; }
+tr.FunctionalRow_Light td, FunctionalRow_Light	{ border-top: 1px solid #dddddd; }
+.FunctionalArea_whiteBg	{ border: 1px solid #000000; background-color: #ffffff; }
+div.FunctionalArea_FloatingBox     { border: 1px solid #000000; padding: 5px; margin-bottom: 2px; margin-right: 2px; }
+
+
+.bold { font-weight: 700; }
+tr.ListHeader		    { font-weight: 700; background-color: #ddeeff; }
+tr.ListHeader td, th	{ font-weight: 700; background-color: #ddeeff; }
+
+tr.ListHeader_highlight		{ font-weight: 700; background-color: #FAFFA0; }
+tr.ListHeader_highlight td	{ font-weight: 700; background-color: #FAFFA0; }
+
+
+.SessionFlowHistory_Url { font-weight: 700; }
+.SessionHistory_Url     { font-weight: 700; }
+
+.ContentDropBox { border: solid 1px #000000;
+            padding: 10px;
+            overflow-y: scroll;
+            MARGIN: 2px; }
+            
+  
+
+.pnlUploadStatus_hidden		{ display:none; border: 1px solid #000000; background-color: #bbeeff; width: 75%; left: 30px; top: 45px; padding: 1em; }
+.pnlUploadStatus			{ display:inline; border: 1px solid #000000; background-color: #bbeeff; width: 75%; left: 30px; top: 45px; padding: 1em; z-index: 1000; }
+
+.simpleMouseOverState { background-color: #eeffcc; }
+.SessionFlowHistory_Url { padding-left: 1.5em; }
+
+.bordvis		    { border: 1px solid #000000; }
+table.bordvis		{ border-left: 1px solid #000000; border-top: 1px solid #000000; }
+table.bordvis td	{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; }
+
+.CntrlGroupBorderLeft { border-left: solid 1px #cccccc; }
+
+.line		{ background-color: #ddeeff; font-size: 1px; }
+img.line	{ background-color: #ddeeff; }
+
+
+.PageTitle	{ font-size: 16px; color: #333333; font-weight: 700; }
+.inlineHelpText { font-size: 9px; color: #666666; padding: 5px; }
+
+tr.ListHeader		{ font-weight: 700; background-color: #eeeeee; }
+tr.ListHeader td	{ font-weight: 700; background-color: #eeeeee; }
+tr.activeSearchPreview td { background-color: #ddeeff; cursor: hand; }
+
+.lastUpdated { font-size: 9px; padding-bottom: 10px; }
+.SearchResultsHeading { font-size: 12px; font-weight: 700; padding-bottom: 1em; }
+.searchResultPageTitle { font-size: 12px; font-weight: 700; }
+td.footerText { background-color: #eeeeee; }
+th { text-align: left; }
+
+.MajorLink { font-size: 13px; }
+:link { color: #3366dd; text-decoration: underline; }
+v:link { color: #3366dd; text-decoration: underline; }
+a:link { color: #3366dd; text-decoration: underline; }
+a:visited { color: #3366dd; text-decoration: underline; }
+a:active { color: red; text-decoration: underline; }
+a:hover { color: red; text-decoration: underline; }
+
+.btn { background-color: #cccccc; border: 1px solid #000000; padding: 3px; cursor: hand; }
+
+/* _publishing style */
+.Popup	{ background-color: #ddeeff; border: 1px solid #000000; }
+
+table.xxx		{ border-left: 1px solid #000000; border-top: 1px solid #000000; background-color: #ddeeff; }
+table.xxx td	{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; background-color: #ddeeff; }
+
+
+.ImageManager { border: 1px solid #000000; background-color: #f3f9ff; padding: 3px; }
+.FileManager { border: 1px solid #000000; background-color: #f3f9ff; padding: 3px; }
+
+
+.ABKEditorButton	{ background-color: #fcfcfc; border: 1px solid #fcfcfc; margin: 1px; cursor: hand; }
+.ABKEditorButton_mo	{ background-color: #f6f6f6; border: 1px solid #999999; margin: 1px; cursor: hand; }
+.ABKEditor			{ background-color: #fcfcfc; border: 1px solid #000000; }
+
+.WordIndexListLetterStyle { font-size: 16px; font-weight: 700; border-bottom: 1px solid #cccccc; }
+.WordIndexListWordStyle { font-weight: 700; }
+.WordIndexListWordLinkStyle { margin-left: 30px; margin-bottom: 4px; }
+.WordIndexListWordLinkGroupStyle { margin-bottom: 15px; margin-top: 4px; }
+
+
+.DefaultFormTemplatePresenter { border: solid 1px #ccccdd; margin-bottom: 4px; }
+     
+.formTemplateControlPresenter { border: solid 1px #ccccdd; margin-bottom: 4px; }
+     
+.formTemplateControlPresenterHeading { font-weight: 700; background-color: #eeeeff; }

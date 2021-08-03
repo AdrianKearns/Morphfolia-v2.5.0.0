@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FormTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Website</Name>
+  <Fields>
+    <FormTemplateField>
+      <Name>Server</Name>
+      <Text></Text>
+      <Type>Medium</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>Url</Name>
+      <Text></Text>
+      <Type>Medium</Type>
+    </FormTemplateField>
+    <FormTemplateField>
+      <Name>About</Name>
+      <Text></Text>
+      <Type>Large</Type>
+    </FormTemplateField>
+  </Fields>
+</FormTemplate>

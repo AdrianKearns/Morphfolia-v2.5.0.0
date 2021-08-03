@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Morphfolia.Web", "http://localhost/Morphfolia.Web", "{B218A4A6-1DFB-4A5B-AB9D-9EBEECE750F2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/Morphfolia.Web"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\inetpub\wwwroot\Morphfolia.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Morphfolia.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Morphfolia.Web"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\inetpub\wwwroot\Morphfolia.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Morphfolia.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\inetpub\wwwroot\Morphfolia.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D61DE8E5-ADF1-4B3B-9907-9F228CC895BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B218A4A6-1DFB-4A5B-AB9D-9EBEECE750F2}.Debug|.NET.ActiveCfg = Debug|.NET
+		{B218A4A6-1DFB-4A5B-AB9D-9EBEECE750F2}.Debug|.NET.Build.0 = Debug|.NET
+		{B218A4A6-1DFB-4A5B-AB9D-9EBEECE750F2}.Release|.NET.ActiveCfg = Debug|.NET
+		{B218A4A6-1DFB-4A5B-AB9D-9EBEECE750F2}.Release|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

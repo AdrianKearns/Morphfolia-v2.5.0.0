@@ -1,0 +1,164 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+
+<!-- Copyright (C) 2010 Adrian Kearns / Morphological Software Solutions Limited.
+You can redistribute this software and/or modify it under the terms of the 
+Microsoft Reciprocal License (Ms-RL).  This program is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+See Licence.txt for more details.  -->
+
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33E2109D-3E14-47B0-A0AB-488EBC4795D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Morphfolia.PublishingSystem</RootNamespace>
+    <AssemblyName>Morphfolia.PublishingSystem</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft Information Security\Microsoft Anti-Cross Site Scripting Library v3.1\Library\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blogging\BloggingHelpers.cs" />
+    <Compile Include="ContentPublishingHelper.cs" />
+    <Compile Include="HttpHandlers\ContentPreview.cs" />
+    <Compile Include="HttpHandlers\BinaryFileInterceptor.cs" />
+    <Compile Include="HttpHandlers\Atom10Feed.cs" />
+    <Compile Include="HttpHandlers\ContentListProvider.cs" />
+    <Compile Include="HttpHandlers\ViewBlogByUrl.cs" />
+    <Compile Include="HttpHandlers\Helpers\ErrorHandling.cs" />
+    <Compile Include="HttpHandlers\ViewBlogPostByTitle.cs" />
+    <Compile Include="HttpHandlers\ViewBlogPostListByTag.cs" />
+    <Compile Include="HttpHandlers\Rss20Feed.cs" />
+    <Compile Include="HttpHandlers\ViewBlogPostById.cs" />
+    <Compile Include="HttpHandlers\Diagnostics.cs" />
+    <Compile Include="HttpHandlers\HttpTrafficHistoryExtractor.cs" />
+    <Compile Include="HttpHandlers\DefaultHandler.cs" />
+    <Compile Include="Exceptions\EditPageHelperException.cs" />
+    <Compile Include="Exceptions\PublishingException.cs" />
+    <Compile Include="HttpHandlers\IndexingHandler.cs" />
+    <Compile Include="HttpHandlers\SearchResultPreview.cs" />
+    <Compile Include="HttpHandlers\Helpers\TracingHelper.cs" />
+    <Compile Include="HttpHandlers\UrlTypeAheadHelper.cs" />
+    <Compile Include="HttpModules\ApplicationRequestLogger.cs" />
+    <Compile Include="Layouts\BlogPageLayout.cs" />
+    <Compile Include="Layouts\SimplePageLayout.cs" />
+    <Compile Include="Logging\EventIds.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skins\FooterFactory.cs" />
+    <Compile Include="Skins\HeaderFactory.cs" />
+    <Compile Include="Skins\RawCssParsingHelper.cs" />
+    <Compile Include="Skins\SimpleSkin.cs" />
+    <Compile Include="WebControls\BlogFeeds.cs" />
+    <Compile Include="WebControls\BlogTagCloud.cs" />
+    <Compile Include="WebControls\BlogPostsByTag.cs" />
+    <Compile Include="WebControls\AvailableBlogs.cs" />
+    <Compile Include="WebControls\AssignContentToPage.cs" />
+    <Compile Include="WebControls\ActiveContentNode.cs" />
+    <Compile Include="WebControls\UrlHistoryTable.cs" />
+    <Compile Include="WebControls\EditPageHelper.cs" />
+    <Compile Include="WebControls\SkinSelector.cs" />
+    <Compile Include="WebControls\CustomPropertyList.cs" />
+    <Compile Include="WebControls\PageLayoutSelector.cs" />
+    <Compile Include="WebControls\Designers\DefaultDesigner.cs" />
+    <Compile Include="WebControls\EditPage.cs" />
+    <Compile Include="WebControls\RecentBlogPosts.cs" />
+    <Compile Include="WebControls\UrlHistory.cs" />
+    <Compile Include="WebControls\UrlTextBox.cs" />
+    <Compile Include="WebUtilities.cs" />
+    <Compile Include="WebControls\AdminSiteMap.cs" />
+    <Compile Include="WebControls\AdminSiteMapLeaf.cs" />
+    <Compile Include="WebControls\AdminSiteMapNode.cs" />
+    <Compile Include="WebControls\AdvancedAdminSiteMap.cs" />
+    <Compile Include="WebControls\AdvancedAdminSiteMapLeaf.cs" />
+    <Compile Include="WebControls\AdvancedAdminSiteMapNode.cs" />
+    <Compile Include="WebControls\ContentContainerDropBox.cs" />
+    <Compile Include="WebControls\ContentList.cs" />
+    <Compile Include="WebControls\CustomProperty.cs" />
+    <Compile Include="WebControls\HttpTrafficFlow.cs" />
+    <Compile Include="WebControls\HttpSessionHistory.cs" />
+    <Compile Include="WebControls\HttpSessionList.cs" />
+    <Compile Include="WebControls\ManageUser.cs" />
+    <Compile Include="WebControls\RoleManager.cs" />
+    <Compile Include="WebControls\RoleManagerUserList.cs" />
+    <Compile Include="WebControls\SearchResults.cs" />
+    <Compile Include="WebControls\TestSecurity.cs" />
+    <Compile Include="WebControls\UserList.cs" />
+    <Compile Include="WebFormHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Morphfolia.Business\Morphfolia.Business.csproj">
+      <Project>{D6362123-906A-4D17-A212-60F885144CCF}</Project>
+      <Name>Morphfolia.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morphfolia.Common\Morphfolia.Common.csproj">
+      <Project>{6602B70C-C556-4F1D-AB96-E2053F7DBA38}</Project>
+      <Name>Morphfolia.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morphfolia.PageLayoutAndSkinAssistant\Morphfolia.PageLayoutAndSkinAssistant.csproj">
+      <Project>{93E008A2-CAA2-444A-8608-EBA9487C8C1D}</Project>
+      <Name>Morphfolia.PageLayoutAndSkinAssistant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morphfolia.WebControls\Morphfolia.WebControls.csproj">
+      <Project>{7DFE206A-F0FC-458C-A6D6-998A6B396574}</Project>
+      <Name>Morphfolia.WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)" "C:\DevData\Morphfolia\Source Code\Current Build"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
